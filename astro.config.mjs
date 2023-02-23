@@ -5,9 +5,11 @@ import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import sitemap from "@astrojs/sitemap";
 
-// https://astro.build/config
+import vercel from "@astrojs/vercel/serverless";
+
 export default defineConfig({
-  site: "https://astro-paper.pages.dev/",
+  site: "https://patrikkaura-dev.vercel.app/",
+  base: "/",
   integrations: [
     tailwind({
       config: {
@@ -33,4 +35,5 @@ export default defineConfig({
     },
     extendDefaultPlugins: true,
   },
+  output: "static",
 });

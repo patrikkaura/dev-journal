@@ -3,23 +3,23 @@ author: Patrik Kaura
 pubDatetime: 2023-02-23T22:02:00Z
 title: Documenting system architecture with C4 diagrams
 postSlug: documenting-system-architecture-with-c4-diagrams
-featured: true
+featured: false
 draft: false
 tags:
-  - system design
+  - system-design
 ogImage: ""
-description:
-    Simple way to document your system architecture.
+description: Simple way to document your system architecture.
 ---
 
 ## Description
 
 The C4 model is a software architecture diagramming approach that prioritizes abstractions
-reflecting how software architects and developers think about and build software. 
-It takes an "abstraction-first" approach to create clear and concise diagrams of software 
-architecture. 
+reflecting how software architects and developers think about and build software.
+It takes an "abstraction-first" approach to create clear and concise diagrams of software
+architecture.
 
 C4 model structures diagrams into 4 levels of abstraction:
+
 - `L1 - system context diagram`
 - `L2 - container diagram`
 - `L3 - component diagram`
@@ -28,23 +28,24 @@ C4 model structures diagrams into 4 levels of abstraction:
 ## C4 model parts
 
 The C4 model provides a method for visualizing the static structures of a software
-system through the use of containers, components, code, and people. 
-People are the human users of the software system. 
+system through the use of containers, components, code, and people.
+People are the human users of the software system.
+
 - The software `system` is the highest
-level of abstraction, representing something that delivers value to its users, such as Sklik.
+  level of abstraction, representing something that delivers value to its users, such as Sklik.
 - `Containers` represent applications or data stores that must be operational for the entire
-software system to function, examples include serverside web apps, MySQL, Redis, or 
-shell scripts. 
-- `Components` group related functionalities together and are encapsulated 
-behind a well-defined interface.
+  software system to function, examples include serverside web apps, MySQL, Redis, or
+  shell scripts.
+- `Components` group related functionalities together and are encapsulated
+  behind a well-defined interface.
 
 ### L1 - system context diagram
 
 To document and visualize a software system effectively, a System Context diagram can serve as a great starting point. This type of diagram provides a holistic view of the system, with the system as a central box and its users and other interacting systems surrounding it. The `emphasis should be on people`, such as actors, roles, and personas, as well as software systems, rather than low-level technical details like protocols or technologies. The System Context diagram should be `simple enough to be presented to non-technical individuals`.
 
-![L1 system](/src/assets/c4/l1-system.png)
-> -- <cite>Simon Brown (https://c4model.com/)</cite>
+![L1 system](/assets/c4/l1-system.png)
 
+> -- <cite>Simon Brown https://c4model.com</cite>
 
 ### L2 - container diagram
 
@@ -52,18 +53,17 @@ After gaining an understanding of how a software system operates within the larg
 
 The Container diagram provides a `high-level overview` of the software architecture and illustrates how `responsibilities are distributed` across the containers. It also shows the major technology choices made and how the containers communicate with one another. This diagram is a simple, technology-focused representation that is beneficial for both software developers and support/operations staff.
 
-![L2 container](/src/assets/c4/l2-container.png)
-> -- <cite>Simon Brown (https://c4model.com/)</cite>
+![L2 container](/assets/c4/l2-container.png)
 
-
+> -- <cite>Simon Brown https://c4model.com</cite>
 
 ### L3 - component diagram
 
 After creating the Container diagram, the next step is to further analyze each container and decompose it into its `major structural building blocks` and their `interactions`. The Component diagram provides an overview of how a container is comprised of numerous "components", identifying each component, their individual `responsibilities`, and the `technology` and `implementation` details associated with them.
 
-![L3 component](/src/assets/c4/l3-component.png)
-> -- <cite>Simon Brown (https://c4model.com/)</cite>
+![L3 component](/assets/c4/l3-component.png)
 
+> -- <cite>Simon Brown https://c4model.com</cite>
 
 ### L4 - code
 
@@ -71,9 +71,9 @@ The final step involves `zooming in` on each component to show how it is `implem
 
 If creating this diagram, it's ideal to `generate it automatically` using tooling such as an IDE or UML modelling tool. Only attributes and methods relevant to the story being told should be shown, as excessive detail is not recommended for anything but the most important or complex components.
 
-![L4 code](/src/assets/c4/l4-code.png)
-> -- <cite>Simon Brown (https://c4model.com/)</cite>
+![L4 code](/assets/c4/l4-code.png)
 
+> -- <cite>Simon Brown https://c4model.com</cite>
 
 # Usage
 
@@ -81,7 +81,7 @@ Personally, I prefer to use the C4-PlantUML plugin, which is described on Github
 
 > C4-PlantUML combines the benefits of PlantUML and the C4 model for providing a simple way of describing and communicate software architectures – especially during up-front design sessions – with an intuitive language using open source and platform independent tools.
 
-> -- <cite>Github (https://github.com/plantuml-stdlib/C4-PlantUML)</cite>
+> -- <cite>Github https://github.com/plantuml-stdlib/C4-PlantUML</cite>
 
 ### Example
 
@@ -108,4 +108,3 @@ Component_Ext(component_ext_alias, "component external label", "technology", "de
 SHOW_LEGEND()
 @enduml
 ```
-
