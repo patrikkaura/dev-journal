@@ -108,3 +108,8 @@ Component_Ext(component_ext_alias, "component external label", "technology", "de
 SHOW_LEGEND()
 @enduml
 ```
+
+### Sources
+
+- C4 model - https://c4model.com/
+- C4-PlantUML - https://github.com/plantuml-stdlib/C4-PlantUML

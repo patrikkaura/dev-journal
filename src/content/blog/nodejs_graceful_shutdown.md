@@ -65,3 +65,7 @@ process.on("SIGTERM", () => {
   });
 });
 ```
+
+### Sources
+
+- Graceful shutdown with Node.js and Kubernetes - https://blog.risingstack.com/graceful-shutdown-node-js-kubernetes/

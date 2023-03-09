@@ -282,3 +282,8 @@ Final product is easy to split into separate files and deploy to Kubernetes thru
 Kustomize is a great tool for templating Kubernetes resources. It is easy to
 use and it is very powerful. It is also very easy to integrate with CI/CD
 pipelines.
+
+### Sources
+
+- Kustomize - https://kustomize.io/
+- Kustomize Github - https://github.com/kubernetes-sigs/kustomize

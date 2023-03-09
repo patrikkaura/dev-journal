@@ -7,7 +7,6 @@ featured: false
 draft: false
 tags:
   - database
-  - web-development
   - system-design
 ogImage: ""
 description: Ways to scale databases.
@@ -78,3 +77,7 @@ which could be an `indexed field or indexed compound fields` in every document i
 applications to make fewer queries and improves performance, making scalability issues less of a worry.
 
 ![galera](/assets/db/sharding-1.png)
+
+### Sources
+
+- Galera cluster - https://galeracluster.com/
