@@ -1,7 +1,7 @@
 ---
 author: Patrik Kaura
 pubDatetime: 2023-03-09T20:56:42Z
-title: Kustomize - Kubernetes resource customization
+title: 🧰 5. Kustomize - Kubernetes resource customization
 postSlug: kubernetes-resource-customization
 featured: false
 draft: false

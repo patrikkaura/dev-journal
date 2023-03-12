@@ -1,7 +1,7 @@
 ---
 author: Patrik Kaura
 pubDatetime: 2023-02-23T22:02:00Z
-title: Documenting system architecture with C4 diagrams
+title: 🏗️ 1. Documenting system architecture with C4 diagrams
 postSlug: documenting-system-architecture-with-c4-diagrams
 featured: false
 draft: false

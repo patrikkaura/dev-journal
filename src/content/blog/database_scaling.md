@@ -1,7 +1,7 @@
 ---
 author: Patrik Kaura
 pubDatetime: 2023-02-24T22:46:00Z
-title: Database scaling
+title: 📂 4. Database scaling
 postSlug: database-scaling
 featured: false
 draft: false

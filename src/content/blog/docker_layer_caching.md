@@ -1,7 +1,7 @@
 ---
 author: Patrik Kaura
 pubDatetime: 2023-02-24T20:46:00Z
-title: Multistage build and layer caching in Docker
+title: 🐳 2. Multistage build and layer caching in Docker
 postSlug: multistage-build-and-layer-caching-in-docker
 featured: false
 draft: false

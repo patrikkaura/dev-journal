@@ -1,7 +1,7 @@
 ---
 author: Patrik Kaura
 pubDatetime: 2023-02-24T21:46:00Z
-title: Graceful shutdown in NodeJS
+title: 🤐 3. Graceful shutdown in NodeJS
 postSlug: graceful-shutdown-in-nodejs
 featured: false
 draft: false
